@@ -1,25 +1,35 @@
 const prompt = require("prompt-sync")()
 
-const frase = " está no nível de "
-const frase2 = "O Herói de nome "
+const frase = "O Herói de nome "
+const frase2 = " está no nível de "
+
 let nome = prompt("Qual é o nome do seu heroi ? ")  
 let xpHeroi = 0
-xpHeroi = prompt("Qual é o seu valor de Xp Atual?")
+xpHeroi = prompt("Qual é o seu valor de Xp Atual ? ")
 
-while (xpHeroi < 1000) {
+
+while (xpHeroi <= 1000) {
     console.log(frase + nome + frase2 + "Ferro")
-} while (xpHeroi <= 2000) {
+    break
+} while (xpHeroi <= 2000 && xpHeroi >=1001) {
     console.log(frase + nome + frase2 + "Bronze")
-} while (xpHeroi <= 5000) {
+    break
+} while (xpHeroi <= 5000 && xpHeroi >=2001) {
     console.log(frase + nome + frase2 + "Prata")
-} while (xpHeroi <= 7000) {
+    break
+} while (xpHeroi <= 7000 && xpHeroi >=5001) {
     console.log(frase + nome + frase2 + "Ouro")
-} while (xpHeroi <= 8000) {
+    break
+} while (xpHeroi <= 8000 && xpHeroi >=7001) {
     console.log(frase + nome + frase2 + "Platina")
-} while (xpHeroi <= 9000) {
+    break
+} while (xpHeroi <= 9000 && xpHeroi >=8001) {
     console.log(frase + nome + frase2 + "Ascendente")
-} while (xpHeroi <= 10000) {
+    break
+} while (xpHeroi <= 10000 && xpHeroi >=9001) {
     console.log(frase + nome + frase2 + "Imortal")
+    break
 } while (xpHeroi > 10000) {
     console.log(frase + nome + frase2 + "Radiante")
+    break
 }
